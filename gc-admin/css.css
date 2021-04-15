@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: #222831;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1{
+	margin: 0 auto;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Audiowide', cursive;
+	margin-bottom: 20px;
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+	opacity: 0.8;
+}
+
+
+input[type="text"]::placeholder, input[type="password"]::placeholder { color: #BCBCBC; font-size: 22px;}
+
+input[type="text"], input[type="password"]{
+	outline: none;
+	background: transparent;
+	background: #222831;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 50px;
+	border-radius: 10px;
+	font-size: 25px;
+	text-indent: 15px;
+	border: none;
+	border: 2px solid #fff;
+	color: #fff;
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+	font-family: 'Oxygen', sans-serif;
+}
+
+input[type="submit"]{
+	display: block;
+	padding: 10px;
+	width: 150px;
+	background: #FE8A71;
+	outline: none;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+.block__auth{
+	padding: 30px;
+	width: 350px;
+	background: #30475e;
+	border-radius: 50px;
+	border: 5px solid #fff;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.prev{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	background: #222;
+	cursor: pointer;
+}
+.prev i{
+	color: #fff;
+	font-size: 50px;
+	position: absolute;
+	top: 9px;
+	left: 7px;
+}
+
+.prev:hover{
+	background: #666;
+}
+
+@media (max-width: 500px){
+
+	input[type="text"]::placeholder, input[type="password"]::placeholder { color: #BCBCBC; font-size: 18px;}
+
+	.block__auth{width: 200px; padding: 17px; border-radius: 25px; border: 2px solid #fff;}
+	h1{ font-size: 30px;}
+
+
+	input[type="text"], input[type="password"]{
+		height: 50px;
+		font-size: 18px;
+	}
+
+	input[type="submit"]{
+		padding: 5px;
+	}
+
+	.g-recaptcha, .g-recaptcha div{ 
+    overflow: hidden; 
+    max-width: 100%; 
+    } 
+   .g-recaptcha iframe, body > div[style]:last-of-type
+   { transform: scale(0.75);
+   transform-origin: left top;
+   }
+
+
+   .prev{
+	width: 40px;
+	height: 40px;
+	}
+	.prev i{
+		font-size: 30px;
+		top: 5px;
+		left: 4px;
+	}
+
+
+}
