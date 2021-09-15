@@ -6,7 +6,9 @@
 Редактировать необходимо файл conndb.php 
 
 $host = 'АДРЕС ХОСТА'; 
+
 $user_db = 'ИМЯ ПОЛЬЗОВАТЕЛЯ И НАИМЕНОВАНИЕ БД';
+
 $passworr = 'ПАРОЛЬ ПОЛЬЗОВАТЕЛЯ';
 
 $link = mysqli_connect($host, $user_db, $passworr, $user_db);
